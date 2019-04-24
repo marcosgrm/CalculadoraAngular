@@ -14,7 +14,7 @@ export class CalculadoraComponent implements OnInit {
   ngOnInit() {
   }
   
-  ac(){
+  c(){
     this.resultado=null;
     this.expressao=null;
   }
@@ -24,12 +24,10 @@ export class CalculadoraComponent implements OnInit {
   }
 
   fazCalculo(num){
-    if(isFinite(eval(this.expressao))==true && isNaN(eval(this.expressao))==false){
-      this.resultado=eval(this.expressao);
-    }else{
-      alert("Número não pode ser representado!")
-      this.resultado=null;
+    if(isFinite(eval(this.expressao))==false || isNaN(eval(this.expressao))==true){
+          alert("Número não pode ser representado!")
     }
+      this.resultado=eval(this.expressao);
   }
 
   retiraUltimo(){
