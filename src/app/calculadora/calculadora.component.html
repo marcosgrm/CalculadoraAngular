@@ -1,0 +1,52 @@
+<html>
+
+<table border=2 style="margin: auto">
+  <tr>
+    CONSOLE: <td>{{expressao}}</td>
+  </tr>
+</table>
+
+<table border="1" class="alinhar" style="margin: auto">
+<tr>
+    <td> <button (click)="insere(7)" style="width: 100%"> 7 </button> </td>
+    <td> <button (click)="insere(8)"> 8 </button> </td>
+    <td> <button (click)="insere(9)" style="width: 100%"> 9 </button> </td>
+    <td> <button (click)="insere('+')"> + </button> </td>
+    <td rowspan="4"> <button style="height: 100px" (click)="fazCalculo()"> = </button> </td>
+</tr>
+<tr style="width: 100%">
+  <td> <button (click)="insere(4)" style="width: 100%"> 4 </button> </td>
+  <td> <button (click)="insere(5)"> 5 </button> </td>
+  <td> <button (click)="insere(6)" style="width: 100%"> 6 </button> </td>
+  <td> <button (click)="insere('-')" style="width: 100%"> - </button> </td>
+
+</tr>
+<tr>
+  <td> <button (click)="insere(1)" style="width: 100%"> 1 </button> </td>
+  <td> <button (click)="insere(2)"> 2 </button> </td>
+  <td> <button (click)="insere(3)" style="width: 100%"> 3 </button> </td>
+  <td> <button (click)="insere('*')" style="width: 100%"> x </button> </td>
+</tr>
+<tr>
+    <td> <button (click)="ac()"> C </button> </td>
+    <td> <button (click)="insere('0')"> 0 </button> </td>
+    <td> <button (click)="retiraUltimo()"> <- </button> </td>
+    <td> <button (click)="insere('/')" style="width: 100%"> ÷ </button> </td>
+</tr>
+
+</table>
+<table border=2 style="margin: auto"> 
+  <tr>
+    =
+    <td>
+      {{resultado}}
+    </td>
+  </tr>
+</table>
+
+<br>
+<footer class="footer">
+  Marcos Gabriel Rodrigues - 3º T.I Manhã
+</footer>
+
+</html>
